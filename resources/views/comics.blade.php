@@ -1,9 +1,10 @@
 @extends('layouts.basic')
 
-@section('title', 'Benvenuto | Home')
+@section('title', 'Benvenuto | Comics')
 
 @section('style')
     <style>
+
     </style>
 @endsection
 

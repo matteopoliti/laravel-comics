@@ -36,9 +36,9 @@ Route::get('/', function () {
     return view('welcome', compact('data', 'greeting'));
 })->name('homePage');
 
-Route::get('/about', function () {
+Route::get('/comics', function () {
 
     $lorem = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto aut excepturi deleniti cupiditate deserunt sint reprehenderit quibusdam tempore voluptas quis, nisi id voluptatibus quaerat repellat doloremque eum eos laborum eaque.';
 
-    return view('about', compact('lorem'));
-})->name('aboutPage');
+    return view('comics', compact('lorem'));
+})->name('comicsPage');

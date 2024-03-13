@@ -13,9 +13,8 @@
 </head>
 
 <body>
-    <header>
-        @include('components.header')
-    </header>
+    @include('components.header')
+
 
     <main>
         <div>
