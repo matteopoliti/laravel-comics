@@ -77,7 +77,60 @@ header {
 
 }
 
-//MAIN
+//MAIN WELCOME
+
+.jumboHome {
+    background-image: url("../img/jumboHome.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    height: 900px;
+    display: flex;
+    align-items: center;
+
+    .jumboText {
+        background-color: rgba(45, 45, 45, 0.7);
+        width: 40%;
+        padding: 30px;
+        border-radius: 10px;
+        margin-left: 30px;
+
+
+        h2 {
+            color: white;
+            margin-block: 20px;
+            font-size: 50px;
+        }
+
+        p {
+            color: #949494;
+            letter-spacing: 1px;
+            font-size: 24px;
+        }
+
+        >div {
+            margin-block: 40px 20px;
+            display: flex;
+            justify-content: center;
+
+            a {
+                color: #fff;
+                padding: 10px;
+                border: 2px solid $linkHover;
+                text-transform: uppercase;
+                font-size: 20px;
+
+
+                &:hover {
+                    background-color: $linkHover;
+                }
+            }
+        }
+
+    }
+}
+
+//MAIN COMICS
 
 .jumbo {
     background-image: url("../img/jumbotron.jpg");
