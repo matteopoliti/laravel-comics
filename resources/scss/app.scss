@@ -35,6 +35,7 @@ button:hover {
     cursor: pointer;
 }
 
+//HEADER
 
 header {
     height: 140px;
@@ -75,6 +76,8 @@ header {
     }
 
 }
+
+//MAIN
 
 .jumbo {
     background-image: url("../img/jumbotron.jpg");
@@ -183,5 +186,90 @@ header {
             }
         }
 
+    }
+}
+
+//FOOTER
+
+.bg_image {
+    background-image: url("../img/footer-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .link {
+        display: flex;
+        gap: 50px;
+        background-image: url("../img/dc-logo-bg.png");
+        background-size: 700px;
+        background-repeat: no-repeat;
+        background-position: right;
+        padding-block: 40px;
+
+
+
+
+        h3 {
+            color: #fff;
+            font-size: 26px;
+            margin-bottom: 15px;
+        }
+
+        ul {
+            list-style-type: none;
+
+            li {
+                color: #949494;
+                margin-bottom: 5px;
+                font-size: 18px;
+                cursor: pointer;
+
+                &:hover {
+                    color: #fff;
+                }
+            }
+        }
+
+
+    }
+
+}
+
+.contacts {
+    background-color: #303030;
+    padding-block: 50px;
+
+    .container {
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        #sign {
+            color: #fff;
+            padding: 10px;
+            border: 2px solid $linkHover;
+            text-transform: uppercase;
+            font-size: 30px;
+
+            &:hover {
+                background-color: $linkHover;
+            }
+        }
+
+        .social {
+            display: flex;
+            gap: 20px;
+
+            span {
+                text-transform: uppercase;
+                color: $linkHover;
+                font-size: 30px;
+            }
+
+            img {
+                color: #fff;
+                width: 40px;
+            }
+        }
     }
 }
