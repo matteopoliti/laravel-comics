@@ -75,3 +75,113 @@ header {
     }
 
 }
+
+.jumbo {
+    background-image: url("../img/jumbotron.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+
+}
+
+.bg_black {
+
+    background-color: #1C1C1C;
+
+    .container {
+        padding-block: 50px;
+
+
+        h2 {
+            color: #fff;
+            background-color: $linkHover;
+            padding: 10px;
+            font-size: 40px;
+            text-align: center;
+            width: 300px;
+            text-transform: uppercase;
+            position: relative;
+            top: -75px;
+            left: 0;
+        }
+
+        .comics {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+
+            .col {
+                width: calc(100% / 6 - 20px + (20px / 6));
+
+                img {
+                    height: 300px;
+                }
+
+                h5 {
+                    font-size: 20px;
+                    color: #d6d6d6;
+                    text-transform: uppercase;
+                    margin-top: 10px;
+                }
+
+                p {
+                    font-size: 16px;
+                    color: #d6d6d6;
+                    margin-block: 5px;
+
+                    span {
+                        color: green;
+                    }
+
+                    #type {
+                        text-transform: uppercase;
+                        font-size: 14px;
+                        color: lightcoral;
+                    }
+                }
+            }
+
+            button {
+
+                color: #fff;
+                background-color: $linkHover;
+                padding: 10px 80px;
+                text-transform: uppercase;
+                font-size: 18px;
+                border: none;
+                outline: none;
+                cursor: pointer;
+            }
+        }
+    }
+
+}
+
+.bg_blue {
+    background-color: $linkHover;
+
+    .info {
+        padding: 50px;
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+
+        .infoContent {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+
+            >figure {
+                width: 50px;
+            }
+
+            >p {
+                color: #fff;
+                text-transform: uppercase;
+                font-size: 18px;
+            }
+        }
+
+    }
+}

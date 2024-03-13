@@ -38,7 +38,7 @@ Route::get('/', function () {
 
 Route::get('/comics', function () {
 
-    $lorem = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto aut excepturi deleniti cupiditate deserunt sint reprehenderit quibusdam tempore voluptas quis, nisi id voluptatibus quaerat repellat doloremque eum eos laborum eaque.';
+    $currentComics = config('comics');
 
-    return view('comics', compact('lorem'));
+    return view('comics', compact('currentComics'));
 })->name('comicsPage');
